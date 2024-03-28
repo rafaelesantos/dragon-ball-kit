@@ -5,7 +5,7 @@ import DragonBallKit
 struct PlanetsView: View {
     @StateObject private var dragonBallKit = DragonBallKit.shared
     @State private var page: Int = 1
-    @State private var limit: Int = 5
+    @State private var limit: Int = 6
     
     var body: some View {
         NavigationStack {
