@@ -30,7 +30,7 @@ public struct CharactersView: View {
             .navigationTitle("Characters")
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
-                    RefdsPagination(currentPage: $page, canChangeToNextPage: {
+                    RefdsPagination(currentPage: $page, design: .serif, canChangeToNextPage: {
                         page < dragonBallKit.characters?.meta?.totalPages ?? 0
                     })
                 }
