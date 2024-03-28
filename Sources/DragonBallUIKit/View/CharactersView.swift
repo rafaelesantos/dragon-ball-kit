@@ -7,6 +7,8 @@ public struct CharactersView: View {
     @State private var page: Int = 1
     @State private var limit: Int = 5
     
+    public init() {}
+    
     public var body: some View {
         NavigationStack {
             List {
