@@ -1,0 +1,51 @@
+{
+  "originHash" : "b1ad7683e4954c04900ade404b8da3f6b2c53310f022b0b7026bb5c946955e97",
+  "pins" : [
+    {
+      "identity" : "dragon-ball-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rafaelesantos/dragon-ball-kit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9904bd166b963ddc994412d8b2dbc8c31d97fe0c"
+      }
+    },
+    {
+      "identity" : "refds-design-system",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rafaelesantos/refds-design-system.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "53bfac38fb3ce9b0023c1ce3da1436338803510a"
+      }
+    },
+    {
+      "identity" : "refds-injection",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rafaelesantos/refds-injection.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8bb7fd6ed01be1f98f560c9d4f77d7646622b816"
+      }
+    },
+    {
+      "identity" : "refds-network",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rafaelesantos/refds-network.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b1581783a4709b39f13cad219cab36061ca3dd41"
+      }
+    },
+    {
+      "identity" : "refds-shared",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rafaelesantos/refds-shared.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7d5c7e73c2d81f0100dce0208b6c1e27f884c2e6"
+      }
+    }
+  ],
+  "version" : 3
+}
