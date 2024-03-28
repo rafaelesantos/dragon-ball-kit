@@ -2,12 +2,12 @@ import SwiftUI
 import RefdsUI
 import DragonBallKit
 
-public struct PlanetsView: View {
+struct PlanetsView: View {
     @StateObject private var dragonBallKit = DragonBallKit.shared
     @State private var page: Int = 1
     @State private var limit: Int = 5
     
-    public var body: some View {
+    var body: some View {
         NavigationStack {
             List {
                 if let planets = dragonBallKit.planets, !planets.items.isEmpty {
