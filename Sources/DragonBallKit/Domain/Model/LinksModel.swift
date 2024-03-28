@@ -1,6 +1,7 @@
 import Foundation
+import RefdsShared
 
-public struct Links: Codable {
+public struct LinksModel: RefdsModel {
     public var first: String
     public var previous: String
     public var next: String

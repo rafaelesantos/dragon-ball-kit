@@ -1,6 +1,7 @@
 import Foundation
+import RefdsShared
 
-public enum Affiliation: String, Codable {
+public enum AffiliationModel: String, RefdsModel, Equatable {
     case zFighter = "Z Fighter"
     case redRibbonArmy = "Red Ribbon Army"
     case namekianWarriorFreelancer = "Namekian Warrior Freelancer"

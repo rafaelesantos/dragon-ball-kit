@@ -1,10 +1,11 @@
 import Foundation
+import RefdsShared
 
-public struct Planet: Codable {
+public struct PlanetModel: RefdsModel, Equatable, Identifiable {
     public var id: Int
     public var name: String
     public var isDestroyed: Bool
     public var description: String
     public var image: String
-    public var characters: [Characters.Character]
+    public var characters: [CharactersModel.CharacterModel]
 }

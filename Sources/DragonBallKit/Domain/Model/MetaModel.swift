@@ -1,6 +1,7 @@
 import Foundation
+import RefdsShared
 
-public struct Meta: Codable {
+public struct MetaModel: RefdsModel {
     public var totalItems: Int
     public var itemCount: Int
     public var itemsPerPage: Int

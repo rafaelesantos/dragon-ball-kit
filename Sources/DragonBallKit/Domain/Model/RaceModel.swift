@@ -1,6 +1,6 @@
 import Foundation
 
-public enum Race: String, Codable {
+public enum RaceModel: String, Codable, Equatable {
     case human = "Human"
     case saiyan = "Saiyan"
     case namekianMajin = "Namekian Majin"

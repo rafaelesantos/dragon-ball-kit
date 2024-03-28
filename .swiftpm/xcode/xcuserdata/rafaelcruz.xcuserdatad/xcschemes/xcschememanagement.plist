@@ -12,7 +12,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DragonBallKit</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DragonBallKitRunner</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DragonBallKitTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DragonBallUIKit</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>dragon-ball-kit</key>
 		<dict>
 			<key>primary</key>
 			<true/>
