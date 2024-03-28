@@ -7,7 +7,17 @@ public struct CharactersView: View {
     @State private var page: Int = 1
     @State private var limit: Int = 6
     
-    public init() {}
+    public init() {
+        let _ = RefdsUI(accentColor: .orange)
+        let largeFont = UIFont.preferredFont(forTextStyle: .largeTitle)
+        let font = UIFont.preferredFont(forTextStyle: .body)
+        if let largeFontDescriptor = largeFont.fontDescriptor.withDesign(.serif)?.withSymbolicTraits(.traitBold),
+           let fontDescriptor = font.fontDescriptor.withDesign(.serif)?.withSymbolicTraits(.traitBold) {
+            
+            UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(descriptor: largeFontDescriptor, size: 0)]
+            UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(descriptor: fontDescriptor, size: 0)]
+        }
+    }
     
     public var body: some View {
         NavigationStack {
@@ -27,7 +37,7 @@ public struct CharactersView: View {
             .onAppear { fetchCharacters() }
             .onChange(of: page) { fetchCharacters() }
             .listStyle(.plain)
-            .navigationTitle("Characters")
+            .navigationTitle(Text("Characters").font(.system(.largeTitle, design: .serif, weight: .bold)))
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
                     RefdsPagination(currentPage: $page, design: .serif, canChangeToNextPage: {
