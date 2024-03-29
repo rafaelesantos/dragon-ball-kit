@@ -49,7 +49,7 @@ public struct CharacterView: View {
                             ZStack {
                                 RefdsStarShower(galaxyHeight: 200)
                                     .frame(width: 150)
-                                    .clipShape(.rect(cornerRadius: .cornerRadius))
+                                    .refdsBorder(padding: .zero)
                                     .refdsParallax(magnitude: index % 2 == 0 ? 15 : -15)
                                 image
                                     .resizable()
