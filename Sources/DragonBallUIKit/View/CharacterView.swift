@@ -47,10 +47,10 @@ public struct CharacterView: View {
                         let transformation = transformations[index]
                         RefdsAsyncImage(url: transformation.image) { image in
                             ZStack {
-                                RefdsStarShower(galaxyHeight: 200)
+                                RefdsStarShower(from: .bottom, galaxyHeight: 200, backgroundColor: .accentColor)
                                     .frame(width: 150)
-                                    .refdsBorder(padding: .zero)
-                                    .refdsParallax(magnitude: index % 2 == 0 ? 15 : -15)
+                                    .clipShape(.rect(cornerRadius: .cornerRadius))
+                                    .refdsParallax(magnitude: index % 2 == 0 ? 90 : -90)
                                 image
                                     .resizable()
                                     .scaledToFit()
