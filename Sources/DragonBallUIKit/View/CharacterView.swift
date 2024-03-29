@@ -46,10 +46,16 @@ public struct CharacterView: View {
                     ForEach(transformations.indices, id: \.self) { index in
                         let transformation = transformations[index]
                         RefdsAsyncImage(url: transformation.image) { image in
-                            image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 250)
+                            ZStack {
+                                RefdsStarShower(galaxyHeight: 200)
+                                    .frame(width: 150)
+                                    .clipShape(.rect(cornerRadius: .cornerRadius))
+                                    .refdsParallax(magnitude: 10)
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 250)
+                            }
                         }
                         .tag(index)
                     }
