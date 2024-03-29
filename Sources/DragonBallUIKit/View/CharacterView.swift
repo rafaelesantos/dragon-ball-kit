@@ -50,7 +50,7 @@ public struct CharacterView: View {
                                 RefdsStarShower(from: .bottom, galaxyHeight: 200, backgroundColor: .accentColor)
                                     .frame(width: 150)
                                     .clipShape(.rect(cornerRadius: .cornerRadius))
-                                    .refdsParallax(magnitude: index % 2 == 0 ? 90 : -90)
+                                    .refdsParallax(magnitude: index % 2 == 0 ? 10 : -10)
                                 image
                                     .resizable()
                                     .scaledToFit()
